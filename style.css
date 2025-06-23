@@ -1,0 +1,214 @@
+/* 🌌 General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🏷️ Header with name + title */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00cfff;
+}
+
+/* 🌥️ Profile blob image */
+.profile-blob {
+  width: 250px;
+  height: 250px;
+  background: url("EDRIC_BLACK.jpg") center center / cover no-repeat;
+  animation: blobMorph 8s ease-in-out infinite alternate;
+  transition: 1s ease-in-out;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Soft white glow */
+}
+
+/* 🌊 Cloud-like morphing animation */
+@keyframes blobMorph {
+  0% {
+    border-top-left-radius: 60% 40%;
+    border-top-right-radius: 40% 60%;
+    border-bottom-right-radius: 60% 40%;
+    border-bottom-left-radius: 40% 60%;
+  }
+  50% {
+    border-top-left-radius: 40% 60%;
+    border-top-right-radius: 60% 40%;
+    border-bottom-right-radius: 40% 60%;
+    border-bottom-left-radius: 60% 40%;
+  }
+  100% {
+    border-top-left-radius: 60% 40%;
+    border-top-right-radius: 40% 60%;
+    border-bottom-right-radius: 60% 40%;
+    border-bottom-left-radius: 40% 60%;
+  }
+}
+
+/* 📄 About section */
+.about {
+  max-width: 600px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about h3 {
+  color: #00cfff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* 📫 Footer */
+footer {
+  background: #111;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+  color: #00cfff;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00cfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive blob size */
+@media (max-width: 768px) {
+  .profile-blob {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
+body {
+  background: #0e0e12;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.skills-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-box {
+  background: #16161d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.skill {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  background: #000;
+  border: 1px solid #555;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);  /* Initial soft glow */
+}
+
+/* Individual border colors */
+.python { border-color: #3572A5; box-shadow: 0 0 10px #3572A5; }
+.html { border-color: #e34c26; box-shadow: 0 0 10px #e34c26; }
+.css { border-color: #264de4; box-shadow: 0 0 10px #264de4; }
+.bootstrap { border-color: #7952b3; box-shadow: 0 0 10px #7952b3; }
+.node { border-color: #68a063; box-shadow: 0 0 10px #68a063; }
+.excel { border-color: #217346; box-shadow: 0 0 10px #217346; }
+.msoffice { border-color: #d83b01; box-shadow: 0 0 10px #d83b01; }
+.vscode { border-color: #007acc; box-shadow: 0 0 10px #007acc; }
+
+/* Hover: Stronger glow */
+.skill:hover {
+  background: #111;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9),
+              0 0 25px currentColor;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social svg {
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+.social.insta:hover svg {
+  filter: drop-shadow(0 0 10px #E1306C) drop-shadow(0 0 20px #E1306C);
+}
+
+.social.linkedin:hover svg {
+  filter: drop-shadow(0 0 10px #0077B5) drop-shadow(0 0 20px #0077B5);
+}
+
+.social.x:hover svg {
+  filter: drop-shadow(0 0 10px #1DA1F2) drop-shadow(0 0 20px #1DA1F2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
